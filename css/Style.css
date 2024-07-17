@@ -264,9 +264,89 @@ header{
     grid-area: instalaciones;
 }
 
+/*!PAGES CASAS*/
+.body-casas{
+    width: 100%;
+    height: calc(80vh - 104px);
+    background-image: url(../img/fondo-escena-reino-hadas-invierno.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.445);
+}
 
-/*!Page CASAS*/
-/*----MAIN----*/
+.hero-casas h2{
+    color: aliceblue;
+    font-family: bonaNava;
+    font-size: 35px;
+    text-align: center;
+    padding: 50px;
+    
+}
+
+.grid-casas{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: repeat(4, 1fr) 0.5fr;
+    grid-template-areas: 
+    ". gry ."
+    ". huf ."
+    ". rev ."
+    ". sly ."
+    "final final final";
+    ;
+    
+    gap: 10px;
+    text-align: center;
+}
+
+.grid-casas div h3{
+    font-family: harry;
+    font-size: 100px;
+}
+
+.grid-casas div p{
+    font-family: bonaNava;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.grid-casas__gry{
+    grid-area: gry;
+    
+}
+.grid-casas__gry h3{ color: rgb(153, 0, 0) ;}
+
+.grid-casas__huf{
+    grid-area: huf;
+    
+}
+.grid-casas__huf h3{ color: rgb(138, 138, 0) ;}
+.grid-casas__rev{
+    grid-area: rev;
+    
+}
+.grid-casas__rev h3{ color: rgb(19, 136, 238) ;}
+.grid-casas__sly{
+    grid-area: sly;
+}
+.grid-casas__sly h3{ color: green ;}
+
+.grid-casas__final{
+    grid-area: final;
+    grid-column: 1/4;
+    text-align: center;
+
+    color: aliceblue;
+    font-family: bonaNava;
+    font-size: 35px;
+    text-align: center;
+    padding: 50px;
+}
 
 
 
@@ -376,89 +456,7 @@ header{
 }   
 
 
-/*!PAGES CASAS*/
-.body-casas{
-    width: 100%;
-    height: calc(80vh - 104px);
-    background-image: url(../img/fondo-escena-reino-hadas-invierno.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.445);
-}
 
-.hero-casas h2{
-    color: aliceblue;
-    font-family: bonaNava;
-    font-size: 35px;
-    text-align: center;
-    padding: 50px;
-    
-}
-
-.grid-casas{
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 0.5fr;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: 
-    ". gry ."
-    ". huf ."
-    ". rev ."
-    ". sly ."
-    "final final final";
-    ;
-    
-    gap: 10px;
-    text-align: center;
-}
-
-.grid-casas div h3{
-    font-family: harry;
-    font-size: 100px;
-}
-
-.grid-casas div p{
-    font-family: bonaNava;
-    font-size: 30px;
-    color: aliceblue;
-}
-
-.grid-casas__gry{
-    grid-area: gry;
-    
-}
-.grid-casas__gry h3{ color: rgb(153, 0, 0) ;}
-
-.grid-casas__huf{
-    grid-area: huf;
-    
-}
-.grid-casas__huf h3{ color: rgb(138, 138, 0) ;}
-.grid-casas__rev{
-    grid-area: rev;
-    
-}
-.grid-casas__rev h3{ color: rgb(19, 136, 238) ;}
-.grid-casas__sly{
-    grid-area: sly;
-}
-.grid-casas__sly h3{ color: green ;}
-
-.grid-casas__final{
-    grid-area: final;
-    grid-column: 1/4;
-    text-align: center;
-
-    color: aliceblue;
-    font-family: bonaNava;
-    font-size: 35px;
-    text-align: center;
-    padding: 50px;
-}
 
 
 /*!MEDIAS INDEX*/
@@ -519,14 +517,7 @@ header{
         font-size: 34px;
     }
 
-    .grid-footer{
 
-        grid-template-areas:
-        ". texto ."
-        ". texto ."
-        ". . .";
-        background-color: black;
-    }
 }
 
 @media only screen and (max-width: 619px)
@@ -582,7 +573,82 @@ header{
     }
 
     .grid-informacion div h2{ font-size: 35px;}
-    .grid-footer div h2{font-size: 40px;}
+    
 }
 
 /*! MEDIAS CASAS*/
+@media only screen and (max-width: 1050px) {
+    .hero-casas h2 {font-size: 28px;}
+    .grid-casas{
+        grid-template-columns: 0.3fr 1.5fr 0.3fr;
+    }
+    .grid-casas div h3{font-size: 75px;}
+    .grid-casas div p{font-size: 25px;}
+    .grid-casas div h2{font-size: 25px;}
+}
+
+@media only screen and (max-width: 800px) {
+
+    .grid-casas{
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+        "gry"
+        "huf"
+        "rev"
+        "sly"
+        "final";
+        gap: 5px;
+    }
+    .grid-casas div h3{font-size: 65px;}
+    .grid-casas div p{font-size: 20px;}
+    .grid-casas div h2{font-size: 20px;}
+}
+
+@media only screen and (max-width: 800px) {
+    .hero-casas h2 {font-size: 20px;}
+    .grid-casas div h3{font-size: 65px;}
+    .grid-casas div p{font-size: 20px;}
+    .grid-casas div h2{font-size: 20px;}
+}
+
+
+@media only screen and (max-width: 600px) {
+    .hero-casas h2 {font-size: 18px;}
+    .grid-casas div h3{font-size: 55px;}
+    .grid-casas div p{font-size: 15px;}
+    .grid-casas div h2{font-size: 18px;}
+}
+
+@media only screen and (max-width: 480px) {
+    .hero-casas h2 {font-size: 17px;}
+    .grid-casas div h3{font-size: 50px;}
+    .grid-casas div p{font-size: 14px;}
+    .grid-casas div h2{font-size: 17px;}
+}
+
+@media only screen and (max-width: 400px) {
+    .hero-casas h2 {font-size: 13px;}
+    .grid-casas div h3{font-size: 40px;}
+    .grid-casas div p{font-size: 13px;}
+    .grid-casas div h2{font-size: 13px;}
+}
+
+
+
+/*!@media footer*/
+@media only screen and ( max-width: 864px)
+{
+    .grid-footer{
+
+        grid-template-areas:
+        ". texto ."
+        ". texto ."
+        ". . .";
+        background-color: black;
+    }
+}
+
+@media only screen and (max-width: 540px)
+{
+    .grid-footer div h2{font-size: 40px;}
+}
