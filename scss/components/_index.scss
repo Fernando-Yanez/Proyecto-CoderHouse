@@ -1,0 +1,170 @@
+
+/*!----INDEX----*/
+.hero{
+    width: 100%;
+    height: calc(90vh - 104px);
+    background-image: url(../img/hogwarts.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    
+}
+
+.hero h2{
+    font-family: harry;
+    font-size: 75px;
+    text-align: center;
+    padding: 50px;
+    
+}
+
+.grid-noticias{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1.5fr 0.2fr;
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas: 
+    ". not1 not2 ."
+    ". not1 not3 ."
+    ". not1 not4 .";
+    grid-gap: 20px;
+    
+    background-image: url(../img/fondo-bosque.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: comic;
+    font-size: 20px;
+    font-family: comic;
+    text-align: center;
+    color: white;
+}
+
+.grid-noticias__not1{
+    grid-area: not1;
+    grid-row: 1/end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgba(0, 128, 0, 0.5) ;
+    border-radius: 25px
+}
+
+.grid-noticias__not1 img{
+    width: 75%;
+    height: 70%;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+.grid-noticias__not2{
+    grid-area: not2;
+    display: flex;
+    padding: 25px;
+    border: 5px solid rgba(255, 0, 0, 0.5);
+    border-radius: 25px;
+}
+
+.grid-noticias__not2 img{
+    width: 150px;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.grid-noticias__not3{
+    grid-area: not3;
+    display: flex;
+    padding: 25px;
+    border: 5px solid rgba(229, 245, 7, 0.5);
+    border-radius: 25px;
+}
+
+.grid-noticias__not3 img{
+    width: 150px;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.grid-noticias__not4{
+    grid-area: not4;
+    display: flex;
+    padding: 25px;
+    border: 5px solid rgba(51, 110, 219, 0.5);
+    border-radius: 25px;
+}
+
+.grid-noticias__not4 img{
+    width: 150px;
+    height: 100%;
+    border-radius: 25px;
+}
+.grid-informacion{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-rows: repeat(4, 300px);
+    grid-template-areas: 
+    ". fundacion img-gry ."
+    ". img-huf ubicacion ."
+    ". personal img-rev ."
+    ". img-sly instalaciones .";
+    gap: 10px;
+    background-image: url(../img/fondo-salaMenesteres.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.grid-informacion div h2{
+    font-family: harry;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+
+}
+
+.grid-informacion div img{
+    width: 300px;
+    height: 300px;
+    
+    
+}
+.grid-informacion__fundacion{
+    grid-area: fundacion;
+    margin: 20px 0 0 0;
+}
+.grid-informacion__img-gry{
+    grid-area: img-gry;
+    margin: 0 auto;
+}
+
+.grid-informacion__img-huf{
+    grid-area: img-huf;
+    margin: 0 auto;
+}
+
+.grid-informacion__ubicacion{
+    grid-area: ubicacion;
+}
+
+.grid-informacion__personal{
+    grid-area: personal;
+}
+.grid-informacion__img-rev{
+    grid-area: img-rev;
+    margin: 0 auto;
+}
+
+.grid-informacion__img-sly{
+    grid-area: img-sly;
+    margin: 0 auto;
+}
+
+.grid-informacion__instalaciones{
+    grid-area: instalaciones;
+}

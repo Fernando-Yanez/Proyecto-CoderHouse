@@ -1,0 +1,50 @@
+/*----HEADER----*/
+header{
+    background-color: black;
+}
+.grid-header{
+    width: 100%;
+    height: 225px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 125px ;
+    grid-template-areas:
+    "h1 h1 h1"
+    "nav nav nav";
+
+}
+
+.grid-header__h1{
+    grid-area: h1;
+    color: white;
+    font-family: harry;
+
+}
+
+.grid-header__h1 h1{
+    text-align: center;
+    padding-top: 25px;
+    font-size: 75px;
+}
+
+.grid-header__nav{
+    grid-area: nav;
+}
+.grid-header__nav nav{
+    background-color: black !important;
+    
+}
+.grid-header__nav img{
+    width: 100px;
+    height: 100px;
+}
+
+.grid-header__nav nav div ul li a{ 
+    color: white !important; 
+    font-family: comic;
+    font-size: 25px;
+}
+.grid-header__nav nav div ul li a:hover{ 
+    font-family: harry;
+    font-size: 30px;
+}

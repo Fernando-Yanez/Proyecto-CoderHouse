@@ -1,0 +1,23 @@
+/*!---FOOTER---*/
+.grid-footer{
+    width: 100%;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 0.5fr;
+    grid-template-rows: repeat(3, 50px) ;
+    grid-template-areas:
+    ". . ."
+    ". texto ."
+    ". . .";
+    background-color: black;
+}
+
+.grid-footer__texto{
+    grid-area: texto;
+}
+.grid-footer__texto h2{ 
+    color: white;
+    font-family: harry;
+    font-size: 50px;
+    text-align: center;
+}
