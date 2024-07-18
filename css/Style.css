@@ -62,7 +62,7 @@ header {
 .hero {
   width: 100%;
   height: calc(90vh - 104px);
-  background-image: url(../img/hogwarts.png);
+  background-image: url(../img/fotos-Index/hogwarts.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -83,7 +83,7 @@ header {
   grid-template-rows: repeat(3, 200px);
   grid-template-areas: ". not1 not2 ." ". not1 not3 ." ". not1 not4 .";
   grid-gap: 20px;
-  background-image: url(../img/fondo-bosque.jpg);
+  background-image: url(../img/fotos-Index/fondo-bosque.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -153,7 +153,7 @@ header {
   grid-template-rows: repeat(4, 300px);
   grid-template-areas: ". fundacion img-gry ." ". img-huf ubicacion ." ". personal img-rev ." ". img-sly instalaciones .";
   gap: 10px;
-  background-image: url(../img/fondo-salaMenesteres.png);
+  background-image: url(../img/fotos-Index/fondo-salaMenesteres.png);
   background-position: center;
   background-size: cover;
   background-attachment: fixed; }
@@ -201,7 +201,7 @@ header {
 .body-casas {
   width: 100%;
   height: calc(80vh - 104px);
-  background-image: url(../img/fondo-escena-reino-hadas-invierno.jpg);
+  background-image: url(../img/fotos-casas/fondo-escena-reino-hadas-invierno.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
