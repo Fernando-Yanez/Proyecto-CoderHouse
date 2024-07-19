@@ -19,32 +19,38 @@ header{
     color: white;
     font-family: harry;
 
-}
-
-.grid-header__h1 h1{
-    text-align: center;
-    padding-top: 25px;
-    font-size: 75px;
+    h1{
+        text-align: center;
+        padding-top: 25px;
+        font-size: 75px;
+    }
 }
 
 .grid-header__nav{
     grid-area: nav;
-}
-.grid-header__nav nav{
-    background-color: black !important;
-    
-}
-.grid-header__nav img{
-    width: 100px;
+
+    nav{
+        background-color: black !important;
+
+        div{
+            ul{
+                li{
+                    a{
+                        color: white !important; 
+                        font-family: comic;
+                        font-size: 25px;
+                        &:hover{    font-family: harry;
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    img{
+        width: 100px;
     height: 100px;
+    }
 }
 
-.grid-header__nav nav div ul li a{ 
-    color: white !important; 
-    font-family: comic;
-    font-size: 25px;
-}
-.grid-header__nav nav div ul li a:hover{ 
-    font-family: harry;
-    font-size: 30px;
-}

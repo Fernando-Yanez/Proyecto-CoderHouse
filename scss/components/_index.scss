@@ -9,14 +9,11 @@
     background-size: cover;
     background-attachment: fixed;
     color: white;
-    
-}
 
-.hero h2{
-    font-family: harry;
-    font-size: 75px;
-    text-align: center;
-    padding: 50px;
+    h2{font-family: harry;
+        font-size: 75px;
+        text-align: center;
+        padding: 50px;}
     
 }
 
@@ -51,27 +48,27 @@
     justify-content: center;
     align-items: center;
     border: 5px solid rgba(0, 128, 0, 0.5) ;
-    border-radius: 25px
-}
+    border-radius: 25px;
 
-.grid-noticias__not1 img{
+    img{
     width: 75%;
     height: 70%;
     margin: 0 auto;
     border-radius: 25px;
+    }
+
+    
 }
+
+
 .grid-noticias__not2{
     grid-area: not2;
     display: flex;
     padding: 25px;
     border: 5px solid rgba(255, 0, 0, 0.5);
     border-radius: 25px;
-}
 
-.grid-noticias__not2 img{
-    width: 150px;
-    height: 100%;
-    border-radius: 25px;
+    img{@extend %img-noticias;}
 }
 
 .grid-noticias__not3{
@@ -80,12 +77,8 @@
     padding: 25px;
     border: 5px solid rgba(229, 245, 7, 0.5);
     border-radius: 25px;
-}
 
-.grid-noticias__not3 img{
-    width: 150px;
-    height: 100%;
-    border-radius: 25px;
+    img{@extend %img-noticias;}
 }
 
 .grid-noticias__not4{
@@ -94,13 +87,11 @@
     padding: 25px;
     border: 5px solid rgba(51, 110, 219, 0.5);
     border-radius: 25px;
+
+    img{@extend %img-noticias;}
 }
 
-.grid-noticias__not4 img{
-    width: 150px;
-    height: 100%;
-    border-radius: 25px;
-}
+
 .grid-informacion{
     width: 100%;
     height: auto;
@@ -118,22 +109,20 @@
     background-size: cover;
     background-attachment: fixed;
 
+
+    div{
+        h2{    font-family: harry;
+            font-size: 40px;
+            text-align: center;
+            color: white;}
+
+        img{   width: 300px;
+            height: 300px;}
+    }
+
 }
 
-.grid-informacion div h2{
-    font-family: harry;
-    font-size: 40px;
-    text-align: center;
-    color: white;
 
-}
-
-.grid-informacion div img{
-    width: 300px;
-    height: 300px;
-    
-    
-}
 .grid-informacion__fundacion{
     grid-area: fundacion;
     margin: 20px 0 0 0;

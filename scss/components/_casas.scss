@@ -11,12 +11,14 @@
     background-color: rgba(0, 0, 0, 0.445);
 }
 
-.hero-casas h2{
-    color: aliceblue;
-    font-family: bonaNava;
-    font-size: 35px;
-    text-align: center;
-    padding: 50px;
+.hero-casas{
+    h2{
+        color: aliceblue;
+        font-family: bonaNava;
+        font-size: 35px;
+        text-align: center;
+        padding: 50px;
+    }
     
 }
 
@@ -36,39 +38,42 @@
     
     gap: 10px;
     text-align: center;
-}
 
-.grid-casas div h3{
-    font-family: harry;
-    font-size: 100px;
-}
-
-.grid-casas div p{
-    font-family: bonaNava;
-    font-size: 30px;
-    color: aliceblue;
+    div{
+        h3{font-family: harry;
+            font-size: 100px;}
+        p{
+            font-family: bonaNava;
+            font-size: 30px;
+            color: aliceblue;
+        }
+    }
 }
 
 .grid-casas__gry{
     grid-area: gry;
+
+    h3{color: rgb(153, 0, 0) ;}
     
 }
-.grid-casas__gry h3{ color: rgb(153, 0, 0) ;}
 
 .grid-casas__huf{
     grid-area: huf;
+
+    h3{color: rgb(138, 138, 0) ;}
     
 }
-.grid-casas__huf h3{ color: rgb(138, 138, 0) ;}
+
 .grid-casas__rev{
     grid-area: rev;
     
+    h3{ color: rgb(19, 136, 238) ;}
 }
-.grid-casas__rev h3{ color: rgb(19, 136, 238) ;}
+
 .grid-casas__sly{
     grid-area: sly;
+    h3{ color: green ;}
 }
-.grid-casas__sly h3{ color: green ;}
 
 .grid-casas__final{
     grid-area: final;

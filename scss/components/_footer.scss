@@ -14,10 +14,11 @@
 
 .grid-footer__texto{
     grid-area: texto;
-}
-.grid-footer__texto h2{ 
-    color: white;
-    font-family: harry;
-    font-size: 50px;
-    text-align: center;
+
+    h2{
+        color: white;
+        font-family: harry;
+        font-size: 50px;
+        text-align: center;
+    }
 }
