@@ -18,12 +18,12 @@ header{
     grid-area: h1;
     color: white;
     font-family: harry;
-
-    h1{
+    text-shadow: 5px -4px 5px rgba(255,255,255,0.69);
+    h1{ 
         text-align: center;
         padding-top: 25px;
-        font-size: 75px;
-    }
+        font-size: 75px;}
+
 }
 
 .grid-header__nav{
@@ -39,6 +39,7 @@ header{
                         color: white !important; 
                         font-family: comic;
                         font-size: 25px;
+                        transition: 0.5s;
                         &:hover{    font-family: harry;
                             font-size: 30px;
                         }

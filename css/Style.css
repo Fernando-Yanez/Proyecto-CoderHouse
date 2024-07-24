@@ -37,7 +37,8 @@ header {
 .grid-header__h1 {
   grid-area: h1;
   color: white;
-  font-family: harry; }
+  font-family: harry;
+  text-shadow: 5px -4px 5px rgba(255, 255, 255, 0.69); }
   .grid-header__h1 h1 {
     text-align: center;
     padding-top: 25px;
@@ -50,7 +51,8 @@ header {
     .grid-header__nav nav div ul li a {
       color: white !important;
       font-family: comic;
-      font-size: 25px; }
+      font-size: 25px;
+      transition: 0.5s; }
       .grid-header__nav nav div ul li a:hover {
         font-family: harry;
         font-size: 30px; }
@@ -179,6 +181,9 @@ header {
   grid-area: instalaciones; }
 
 /*!PAGES CASAS*/
+header div nav {
+  z-index: 1; }
+
 .body-casas {
   width: 100%;
   height: calc(80vh - 104px);
@@ -245,27 +250,6 @@ header {
   padding: 50px; }
 
 /*!Page Actividades*/
-.grid-actividades {
-  width: 100%;
-  height: auto;
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "barL academia" "barL extracurriculares" "barL tareas-resp";
-  gap: 10px; }
-
-.grid-actividades__Barra-Lateral {
-  grid-area: barL; }
-
-.grid-actividades__Academicas {
-  grid-area: academia; }
-
-.grid-actividades__Extracurriculares {
-  grid-area: Extracurriculares; }
-
-.grid-actividades__Tareas-Responsabilidades {
-  grid-area: tareas-resp; }
-
 .grid-academia {
   width: 100%;
   height: auto;

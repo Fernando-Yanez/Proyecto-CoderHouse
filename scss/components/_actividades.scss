@@ -1,38 +1,7 @@
-
+//clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
 
 /*!Page Actividades*/
 //----MAIN----
-
-.grid-actividades{
-    width:100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-    "barL academia"
-    "barL extracurriculares"
-    "barL tareas-resp";
-    gap:10px;
-
-
-}
-
-.grid-actividades__Barra-Lateral{
-    grid-area: barL;
-
-}
-.grid-actividades__Academicas{
-    grid-area: academia;
-    
-}
-.grid-actividades__Extracurriculares{
-    grid-area: Extracurriculares;
-}
-.grid-actividades__Tareas-Responsabilidades{
-    grid-area: tareas-resp;
-}
-
 .grid-academia{
     width:100%;
     height: auto;
@@ -57,6 +26,8 @@
     }
 
 }
+
+
 
 .grid-academia__Transformaciones{
     grid-area: transformaciones;
@@ -119,3 +90,5 @@
     grid-template-areas:"";
     gap: 5px;
 }
+
+
