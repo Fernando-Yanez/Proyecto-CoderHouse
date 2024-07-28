@@ -2,93 +2,85 @@
 
 /*!Page Actividades*/
 //----MAIN----
-.grid-academia{
-    width:100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(12, auto);
-    grid-template-areas:
-    "transformaciones encantamiento"
-    "pociones defensa"
-    "astronomia herbologia"
-    "historia-magia cui-criaturas"
-    "adivinacion aritmancia"
-    "estud-muggle runa-antigua ";
-    gap: 5px;
-
-    div{
-        img{
-            width: 100%;
-            height: 350px;
-        }
-    
+.carrusel{
+    img{
+        width: 1700px;
+        height: 800px;
     }
-
 }
 
-
-
-.grid-academia__Transformaciones{
-    grid-area: transformaciones;
-}
-
-.grid-academia__Encantamiento{
-    grid-area: encantamiento;
-}
-
-.grid-academia__Pociones{
-    grid-area: pociones;
-}
-.grid-academia__Defensa-artes-oscuras{
-    grid-area: defensa;
-}
-.grid-academia__Astronomia{
-    grid-area: astronomia;
-}
-.grid-academia__Herbologia{
-    grid-area: herbologia;
-}
-.grid-academia__Historia-magia{
-    grid-area: historia-magia;
-}
-.grid-academia__Cuidado-criaturas{
-    grid-area: cui-criaturas;
-}
-.grid-academia__Adivinacion{
-    grid-area: adivinacion;
-}
-
-.grid-academia__Aritmancia{
-    grid-area: aritmancia;
-}
-
-.grid-academia__Estudios-muggle{
-    grid-area: estud-muggle;
-}
-
-.grid-academia__Runas-antiguas{
-    grid-area: runa-antigua;
-}
-
-
-.grid-extracurriculares{
-    width:100%;
+.grid-actividades{
+    width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(9, auto);
-    grid-template-areas:"";
-    gap: 5px;
-}
-.grid-Tareas-Responsabilidades{
-    width:100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(9, auto);
-    grid-template-areas:"";
-    gap: 5px;
+    grid-template-columns: 0.8fr 1fr 1fr 0.8fr;
+    grid-template-rows: repeat(6, 450px);
+    grid-template-areas: 
+    ". transf encant ."
+    ". pocio defenAO ."
+    ". astro herbo ."
+    ". histM cuidaCM ."
+    ". adivin aritm ."
+    ". EstudM runasA .";
+    gap: 10px;
+
+
+    background-image: url(../img/fotos-academicas/fondo-callejon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.445);
+
 }
 
 
+.grid-actividades__Transformaciones{
+    grid-area: transf;
+    @extend %display-actividades;
+}
+.grid-actividades__Encantamientos{
+    grid-area: encant;
+    @extend %display-actividades;
+}
+.grid-actividades__Pociones{
+    grid-area: pocio;
+    @extend %display-actividades;
+}
+.grid-actividades__Defensa-artes-oscuras{
+    grid-area: defenAO;
+    @extend %display-actividades;
+}
+.grid-actividades__Astronomia{
+    grid-area: astro;
+    @extend %display-actividades;
+}
+.grid-actividades__Herbologia{
+    grid-area: herbo;
+    @extend %display-actividades;
+}
+.grid-actividades__Historia-magia{
+    grid-area: histM;
+    @extend %display-actividades;
+}
+.grid-actividades__Cuidado-Cmagicas{
+    grid-area: cuidaCM;
+    @extend %display-actividades;
+}
+.grid-actividades__Adivinacion{
+    grid-area: adivin;
+    @extend %display-actividades;
+}
+.grid-actividades__Aritmancia{
+    grid-area: aritm;
+    @extend %display-actividades;
+}
+.grid-actividades__Estudios-muggle{
+    grid-area: EstudM;
+    @extend %display-actividades;
+}
+.grid-actividades__Runas-antiguas{
+    grid-area: runasA;
+    @extend %display-actividades;
+}

@@ -17,11 +17,6 @@
   padding: 0;
   box-sizing: border-box; }
 
-.grid-noticias__not2 img, .grid-noticias__not3 img, .grid-noticias__not4 img {
-  width: 150px;
-  height: 100%;
-  border-radius: 25px; }
-
 /*----HEADER----*/
 header {
   background-color: black; }
@@ -59,6 +54,47 @@ header {
   .grid-header__nav img {
     width: 100px;
     height: 100px; }
+
+.grid-noticias__not2 img, .grid-noticias__not3 img, .grid-noticias__not4 img {
+  width: 150px;
+  height: 100%;
+  border-radius: 25px; }
+
+.grid-actividades__Transformaciones, .grid-actividades__Encantamientos, .grid-actividades__Pociones, .grid-actividades__Defensa-artes-oscuras, .grid-actividades__Astronomia, .grid-actividades__Herbologia, .grid-actividades__Historia-magia, .grid-actividades__Cuidado-Cmagicas, .grid-actividades__Adivinacion, .grid-actividades__Aritmancia, .grid-actividades__Estudios-muggle, .grid-actividades__Runas-antiguas {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px auto 350px;
+  grid-template-areas: "h3" "h4" "txt";
+  grid-gap: 5px;
+  text-align: center; }
+  .grid-actividades__Transformaciones h3, .grid-actividades__Encantamientos h3, .grid-actividades__Pociones h3, .grid-actividades__Defensa-artes-oscuras h3, .grid-actividades__Astronomia h3, .grid-actividades__Herbologia h3, .grid-actividades__Historia-magia h3, .grid-actividades__Cuidado-Cmagicas h3, .grid-actividades__Adivinacion h3, .grid-actividades__Aritmancia h3, .grid-actividades__Estudios-muggle h3, .grid-actividades__Runas-antiguas h3 {
+    grid-area: h3;
+    font-family: harry;
+    font-size: 40px;
+    font-style: italic;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 25px; }
+  .grid-actividades__Transformaciones h4, .grid-actividades__Encantamientos h4, .grid-actividades__Pociones h4, .grid-actividades__Defensa-artes-oscuras h4, .grid-actividades__Astronomia h4, .grid-actividades__Herbologia h4, .grid-actividades__Historia-magia h4, .grid-actividades__Cuidado-Cmagicas h4, .grid-actividades__Adivinacion h4, .grid-actividades__Aritmancia h4, .grid-actividades__Estudios-muggle h4, .grid-actividades__Runas-antiguas h4 {
+    grid-area: h4;
+    font-family: bonaNava;
+    font-size: 25px;
+    color: white; }
+  .grid-actividades__Transformaciones p, .grid-actividades__Encantamientos p, .grid-actividades__Pociones p, .grid-actividades__Defensa-artes-oscuras p, .grid-actividades__Astronomia p, .grid-actividades__Herbologia p, .grid-actividades__Historia-magia p, .grid-actividades__Cuidado-Cmagicas p, .grid-actividades__Adivinacion p, .grid-actividades__Aritmancia p, .grid-actividades__Estudios-muggle p, .grid-actividades__Runas-antiguas p {
+    grid-area: txt;
+    text-align: center;
+    font-family: bonaNava;
+    font-size: 20px;
+    color: white;
+    margin: 30px 0 10px 0;
+    display: contents; }
+
+@media only screen and (max-width) {
+  .grid-actividades__Transformaciones, .grid-actividades__Encantamientos, .grid-actividades__Pociones, .grid-actividades__Defensa-artes-oscuras, .grid-actividades__Astronomia, .grid-actividades__Herbologia, .grid-actividades__Historia-magia, .grid-actividades__Cuidado-Cmagicas, .grid-actividades__Adivinacion, .grid-actividades__Aritmancia, .grid-actividades__Estudios-muggle, .grid-actividades__Runas-antiguas {
+    color: black; } }
 
 /*!----INDEX----*/
 .hero {
@@ -250,81 +286,63 @@ header div nav {
   padding: 50px; }
 
 /*!Page Actividades*/
-.grid-academia {
+.carrusel img {
+  width: 1700px;
+  height: 800px; }
+
+.grid-actividades {
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(12, auto);
-  grid-template-areas: "transformaciones encantamiento" "pociones defensa" "astronomia herbologia" "historia-magia cui-criaturas" "adivinacion aritmancia" "estud-muggle runa-antigua ";
-  gap: 5px; }
-  .grid-academia div img {
-    width: 100%;
-    height: 350px; }
+  grid-template-columns: 0.8fr 1fr 1fr 0.8fr;
+  grid-template-rows: repeat(6, 450px);
+  grid-template-areas: ". transf encant ." ". pocio defenAO ." ". astro herbo ." ". histM cuidaCM ." ". adivin aritm ." ". EstudM runasA .";
+  gap: 10px;
+  background-image: url(../img/fotos-academicas/fondo-callejon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.445); }
 
-.grid-academia__Transformaciones {
-  grid-area: transformaciones; }
+.grid-actividades__Transformaciones {
+  grid-area: transf; }
 
-.grid-academia__Encantamiento {
-  grid-area: encantamiento; }
+.grid-actividades__Encantamientos {
+  grid-area: encant; }
 
-.grid-academia__Pociones {
-  grid-area: pociones; }
+.grid-actividades__Pociones {
+  grid-area: pocio; }
 
-.grid-academia__Defensa-artes-oscuras {
-  grid-area: defensa; }
+.grid-actividades__Defensa-artes-oscuras {
+  grid-area: defenAO; }
 
-.grid-academia__Astronomia {
-  grid-area: astronomia; }
+.grid-actividades__Astronomia {
+  grid-area: astro; }
 
-.grid-academia__Herbologia {
-  grid-area: herbologia; }
+.grid-actividades__Herbologia {
+  grid-area: herbo; }
 
-.grid-academia__Historia-magia {
-  grid-area: historia-magia; }
+.grid-actividades__Historia-magia {
+  grid-area: histM; }
 
-.grid-academia__Cuidado-criaturas {
-  grid-area: cui-criaturas; }
+.grid-actividades__Cuidado-Cmagicas {
+  grid-area: cuidaCM; }
 
-.grid-academia__Adivinacion {
-  grid-area: adivinacion; }
+.grid-actividades__Adivinacion {
+  grid-area: adivin; }
 
-.grid-academia__Aritmancia {
-  grid-area: aritmancia; }
+.grid-actividades__Aritmancia {
+  grid-area: aritm; }
 
-.grid-academia__Estudios-muggle {
-  grid-area: estud-muggle; }
+.grid-actividades__Estudios-muggle {
+  grid-area: EstudM; }
 
-.grid-academia__Runas-antiguas {
-  grid-area: runa-antigua; }
+.grid-actividades__Runas-antiguas {
+  grid-area: runasA; }
 
-.grid-extracurriculares {
-  width: 100%;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(9, auto);
-  grid-template-areas: "";
-  gap: 5px; }
-
-.grid-Tareas-Responsabilidades {
-  width: 100%;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(9, auto);
-  grid-template-areas: "";
-  gap: 5px; }
-
-/*!Page Instalaciones*/
-.instalaciones img {
-  width: 300px;
-  height: 400px; }
-
-.instalaciones p {
-  font-family: "comic";
-  font-size: 20px; }
-
+/*Page Materiales*/
 /*!page Contacto */
 .boton button {
   background-color: #4CAF50;
@@ -349,7 +367,8 @@ header div nav {
     color: white;
     font-family: harry;
     font-size: 50px;
-    text-align: center; }
+    text-align: center;
+    text-shadow: 5px -4px 5px rgba(255, 255, 255, 0.69); }
 
 /*!@media INDEX*/
 @media only screen and (max-width: 1162px) {
