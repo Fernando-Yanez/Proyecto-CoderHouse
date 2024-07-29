@@ -1,0 +1,76 @@
+/*!page MISION VISION */
+
+
+.grid-misiVisi{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-rows: 50px 1fr 50px 1fr;
+    grid-template-areas: 
+    ". Imisi Tmisi ."
+    ". Imisi Pmisi ."
+    ". Tvisi Ivisi . "
+    ". Pvisi Ivisi .";
+    gap: 10px;
+
+
+    background-image: url(../img/fotos-misionVision/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.445);
+
+    
+    
+    img{
+        width: 100%;
+        height: 300px;
+        opacity: 0.7;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    h3{
+        font-family: harry;
+        color: white;
+        font-size: 50px;
+    }
+    p{
+        font-family: bonaNava;
+        color: white;
+        font-size: 20px;
+    }
+
+}
+
+.grid-misiVisi__Titulo-mision{
+    grid-area: Tmisi;
+    margin: 50px 0 0 0;
+}
+.grid-misiVisi__Img-mision{
+    grid-area: Imisi;
+    margin: 50px 20px 50px 0;
+}
+.grid-misiVisi__Txt-mision{
+    grid-area: Pmisi;
+    margin: 50px 20px 50px 0;
+}
+
+
+.grid-misiVisi__Titulo-vision{
+    grid-area: Tvisi;
+    margin: 50px 0 0 0;
+}
+.grid-misiVisi__Txt-vision{
+    grid-area: Pvisi;
+    margin: 50px 20px 50px 0;
+}
+.grid-misiVisi__Img-vision{
+    grid-area: Ivisi;
+    margin: 50px 20px 50px 0;
+}
+
+

@@ -308,3 +308,133 @@
     }
 }
 
+/*!MEDIA QUERI PAG ACTIVIDADES*/
+@media only screen and (max-width: 1180px)
+{
+    .grid-actividades{
+        grid-template-columns: 0.4fr 1fr 1fr 0.4fr ;
+    }
+
+    .carrusel{
+        img{
+            
+            height: 600px;
+        }
+    }
+}
+
+@media only screen and (max-width: 930px){ 
+    .grid-actividades{
+        grid-template-columns:1fr 1fr;
+        
+        grid-template-areas: 
+        " transf encant "
+        " pocio defenAO "
+        " astro herbo "
+        " histM cuidaCM "
+        " adivin aritm "
+        " EstudM runasA ";
+    }
+
+    .carrusel{
+        img{
+            height: 400px;
+        }}
+    
+}
+
+
+@media only screen and (max-width: 760px){
+    .grid-actividades{
+        grid-template-columns:  1fr ;
+        grid-template-rows: repeat(12, 350);
+        grid-template-areas: 
+        "transf "
+        "encant "
+        "pocio "
+        "defenAO "
+        "astro"
+        "herbo"
+        "histM"
+        "cuidaCM "
+        "adivin"
+        "aritm "
+        "EstudM"
+        "runasA";
+    }
+
+    .carrusel{
+        img{
+            height: 300px;
+        }
+    }
+}
+
+@media only screen and ( max-width: 400px){
+    %display-actividades{
+        h3{font-size: 35px;}
+        h4{font-size: 20px;}
+        p{font-size: 15px;}
+    }
+
+    }
+
+    /*!En proceso*/
+
+/*!@MEDIA MISION & VISION*/
+
+@media only screen and(max-width: 1200px)
+{   
+    .grid-misiVisi{
+    grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
+    grid-template-areas: 
+    " . Imisi Tmisi ."
+    " . Imisi Pmisi ."
+    " . Tvisi Ivisi ."
+    " . Pvisi Ivisi .";
+    }
+
+}
+
+@media only screen and(max-width: 900px){
+    .grid-misiVisi{
+        
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto 50px auto auto 50px auto;
+    grid-template-areas: 
+    " Imisi "
+    " Tmisi "
+    " Pmisi "
+    " Ivisi "
+    " Tvisi "
+    " Pvisi ";
+
+    h3{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    }
+
+    .grid-misiVisi__Titulo-mision{
+        margin: 0;
+    }
+    .grid-misiVisi__Img-mision{
+        margin: 0;
+    }
+    .grid-misiVisi__Txt-mision{
+        margin: 0;
+    }
+    
+    
+    .grid-misiVisi__Titulo-vision{
+        margin: 0;
+    }
+    .grid-misiVisi__Txt-vision{
+        margin: 0;
+    }
+    .grid-misiVisi__Img-vision{
+        margin: 0;
+    }
+}

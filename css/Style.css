@@ -77,7 +77,7 @@ header {
     color: white;
     text-decoration: underline;
     text-align: center;
-    margin-top: 25px; }
+    margin: 25px 0 10px 0; }
   .grid-actividades__Transformaciones h4, .grid-actividades__Encantamientos h4, .grid-actividades__Pociones h4, .grid-actividades__Defensa-artes-oscuras h4, .grid-actividades__Astronomia h4, .grid-actividades__Herbologia h4, .grid-actividades__Historia-magia h4, .grid-actividades__Cuidado-Cmagicas h4, .grid-actividades__Adivinacion h4, .grid-actividades__Aritmancia h4, .grid-actividades__Estudios-muggle h4, .grid-actividades__Runas-antiguas h4 {
     grid-area: h4;
     font-family: bonaNava;
@@ -298,7 +298,7 @@ header div nav {
   grid-template-rows: repeat(6, 450px);
   grid-template-areas: ". transf encant ." ". pocio defenAO ." ". astro herbo ." ". histM cuidaCM ." ". adivin aritm ." ". EstudM runasA .";
   gap: 10px;
-  background-image: url(../img/fotos-academicas/fondo-callejon.jpg);
+  background-image: url(../img/fotos-academicas/fondo-comedor.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -343,13 +343,60 @@ header div nav {
   grid-area: runasA; }
 
 /*Page Materiales*/
-/*!page Contacto */
-.boton button {
-  background-color: #4CAF50;
-  color: #ffffff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px; }
+/*!page MISION VISION */
+.grid-misiVisi {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+  grid-template-rows: 50px 1fr 50px 1fr;
+  grid-template-areas: ". Imisi Tmisi ." ". Imisi Pmisi ." ". Tvisi Ivisi . " ". Pvisi Ivisi .";
+  gap: 10px;
+  background-image: url(../img/fotos-misionVision/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.445); }
+  .grid-misiVisi img {
+    width: 100%;
+    height: 300px;
+    opacity: 0.7;
+    display: flex;
+    margin: 0 auto; }
+  .grid-misiVisi h3 {
+    font-family: harry;
+    color: white;
+    font-size: 50px; }
+  .grid-misiVisi p {
+    font-family: bonaNava;
+    color: white;
+    font-size: 20px; }
+
+.grid-misiVisi__Titulo-mision {
+  grid-area: Tmisi;
+  margin: 50px 0 0 0; }
+
+.grid-misiVisi__Img-mision {
+  grid-area: Imisi;
+  margin: 50px 20px 50px 0; }
+
+.grid-misiVisi__Txt-mision {
+  grid-area: Pmisi;
+  margin: 50px 20px 50px 0; }
+
+.grid-misiVisi__Titulo-vision {
+  grid-area: Tvisi;
+  margin: 50px 0 0 0; }
+
+.grid-misiVisi__Txt-vision {
+  grid-area: Pvisi;
+  margin: 50px 20px 50px 0; }
+
+.grid-misiVisi__Img-vision {
+  grid-area: Ivisi;
+  margin: 50px 20px 50px 0; }
 
 /*!---FOOTER---*/
 .grid-footer {
@@ -540,3 +587,62 @@ header div nav {
 @media only screen and (max-width: 540px) {
   .grid-footer div h2 {
     font-size: 40px; } }
+
+/*!MEDIA QUERI PAG ACTIVIDADES*/
+@media only screen and (max-width: 1180px) {
+  .grid-actividades {
+    grid-template-columns: 0.4fr 1fr 1fr 0.4fr; }
+  .carrusel img {
+    height: 600px; } }
+
+@media only screen and (max-width: 930px) {
+  .grid-actividades {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: " transf encant " " pocio defenAO " " astro herbo " " histM cuidaCM " " adivin aritm " " EstudM runasA "; }
+  .carrusel img {
+    height: 400px; } }
+
+@media only screen and (max-width: 760px) {
+  .grid-actividades {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 350);
+    grid-template-areas: "transf " "encant " "pocio " "defenAO " "astro" "herbo" "histM" "cuidaCM " "adivin" "aritm " "EstudM" "runasA"; }
+  .carrusel img {
+    height: 300px; } }
+
+@media only screen and (max-width: 400px) {
+  .grid-actividades__Transformaciones h3, .grid-actividades__Encantamientos h3, .grid-actividades__Pociones h3, .grid-actividades__Defensa-artes-oscuras h3, .grid-actividades__Astronomia h3, .grid-actividades__Herbologia h3, .grid-actividades__Historia-magia h3, .grid-actividades__Cuidado-Cmagicas h3, .grid-actividades__Adivinacion h3, .grid-actividades__Aritmancia h3, .grid-actividades__Estudios-muggle h3, .grid-actividades__Runas-antiguas h3 {
+    font-size: 35px; }
+  .grid-actividades__Transformaciones h4, .grid-actividades__Encantamientos h4, .grid-actividades__Pociones h4, .grid-actividades__Defensa-artes-oscuras h4, .grid-actividades__Astronomia h4, .grid-actividades__Herbologia h4, .grid-actividades__Historia-magia h4, .grid-actividades__Cuidado-Cmagicas h4, .grid-actividades__Adivinacion h4, .grid-actividades__Aritmancia h4, .grid-actividades__Estudios-muggle h4, .grid-actividades__Runas-antiguas h4 {
+    font-size: 20px; }
+  .grid-actividades__Transformaciones p, .grid-actividades__Encantamientos p, .grid-actividades__Pociones p, .grid-actividades__Defensa-artes-oscuras p, .grid-actividades__Astronomia p, .grid-actividades__Herbologia p, .grid-actividades__Historia-magia p, .grid-actividades__Cuidado-Cmagicas p, .grid-actividades__Adivinacion p, .grid-actividades__Aritmancia p, .grid-actividades__Estudios-muggle p, .grid-actividades__Runas-antiguas p {
+    font-size: 15px; } }
+
+/*!En proceso*/
+/*!@MEDIA MISION & VISION*/
+@media only screen and (max-width: 1200px) {
+  .grid-misiVisi {
+    grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
+    grid-template-areas: " . Imisi Tmisi ." " . Imisi Pmisi ." " . Tvisi Ivisi ." " . Pvisi Ivisi ."; } }
+
+@media only screen and (max-width: 900px) {
+  .grid-misiVisi {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 50px auto auto 50px auto;
+    grid-template-areas: " Imisi " " Tmisi " " Pmisi " " Ivisi " " Tvisi " " Pvisi "; }
+    .grid-misiVisi h3 {
+      text-align: center; }
+    .grid-misiVisi p {
+      text-align: center; }
+  .grid-misiVisi__Titulo-mision {
+    margin: 0; }
+  .grid-misiVisi__Img-mision {
+    margin: 0; }
+  .grid-misiVisi__Txt-mision {
+    margin: 0; }
+  .grid-misiVisi__Titulo-vision {
+    margin: 0; }
+  .grid-misiVisi__Txt-vision {
+    margin: 0; }
+  .grid-misiVisi__Img-vision {
+    margin: 0; } }
