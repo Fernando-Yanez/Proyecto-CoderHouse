@@ -53,8 +53,127 @@ $color-letras: white;
     
 }
 
-@media only screen and (max-width){
-    %display-actividades{
-        color: black;   
-    }
+//OPERACIONES DE GALERIA\\
+%grid-galeria
+{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 0.5fr repeat(4, 1fr) 0.5fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin: 0 0 25px 0 ;
+    opacity: 0.7;
+    
+
+
 }
+
+@mixin rango ($valorRango)
+{
+    @if $valorRango == 1
+    {
+        img{
+            width: 100%;
+            height: 610px;
+            transition: 1s;
+            display: flex;
+            margin: 0 auto;
+        }
+
+
+    }@else{
+        img{
+                    
+        width: 100%;
+        height: 300px;
+        transition: 1s;
+        display: flex;
+        margin: 0 auto;
+        
+
+                } 
+            }
+
+}
+
+
+@mixin orden ($valorIf)
+{
+    @if $valorIf == 1{
+        grid-template-areas:
+        ". imgPrin imgPrim imgSec imgTer . "
+        ". imgPrin imgCuar imgQuin imgSect .";
+
+
+        .grid-galeria__imgPrin{
+            grid-area: imgPrin;
+            grid-row: 1/end;
+            @include rango(1);
+        }
+        .grid-galeria__imgPrim{
+            grid-area: imgPrim;
+            @include rango(2);
+        }
+        .grid-galeria__imgSec{
+            grid-area: imgSec;
+            @include rango(2);
+        }
+        .grid-galeria__imgTer{
+            grid-area: imgTer;
+            @include rango(2);
+        }
+
+        .grid-galeria__imgCuar{
+            grid-area: imgCuar;
+            @include rango(2);
+        }
+        .grid-galeria__imgQuin{
+            grid-area: imgQuin;
+            @include rango(2);
+        }
+        .grid-galeria__imgSect{
+            grid-area: imgSect;
+            @include rango(2);
+        }
+        
+    }@else {
+        grid-template-areas:
+        ".  imgPrim imgSec imgTer imgPrin . "
+        ".  imgCuar imgQuin imgSect imgPrin .";
+
+
+        .grid-galeria__imgPrin{
+            grid-area: imgPrin;
+            grid-row: 1/3;
+            @include rango(1);
+        }
+        .grid-galeria__imgPrim{
+            grid-area: imgPrim;
+            @include rango(2);
+        }
+        .grid-galeria__imgSec{
+            grid-area: imgSec;
+            @include rango(2);
+        }
+        .grid-galeria__imgTer{
+            grid-area: imgTer;
+            @include rango(2);
+        }
+
+        .grid-galeria__imgCuar{
+            grid-area: imgCuar;
+            @include rango(2);
+        }
+        .grid-galeria__imgQuin{
+            grid-area: imgQuin;
+            @include rango(2);
+        }
+        .grid-galeria__imgSect{
+            grid-area: imgSect;
+            @include rango(2);
+        }
+    }
+    
+}
+    

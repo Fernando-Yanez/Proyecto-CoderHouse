@@ -1,0 +1,56 @@
+/*!Page GALERIA*/
+
+main{
+    background-image: url(../img/fotos-galeria/hogwarts.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.grid-galeria__Gryf{
+    @extend %grid-galeria;
+    @include orden (1);
+
+    div{
+        img:hover{
+            opacity: 1;
+            scale: 1.1;
+        }
+    }
+}
+
+.grid-galeria__Huff{
+    @extend %grid-galeria;
+    @include orden (2);
+    div{
+        img:hover{
+            opacity: 1;
+            scale: 1.1;
+        }
+    }
+}
+
+.grid-galeria__Revc{
+    @extend %grid-galeria;
+    @include orden (1);
+    div{
+        img:hover{
+            opacity: 1;
+            scale: 1.1;
+        }
+    }
+}
+
+.grid-galeria__Slyt{
+    @extend %grid-galeria;
+    @include orden (2);
+    div{
+        img:hover{
+            opacity: 1;
+            scale: 1.1;
+        }
+    }
+    margin: 0;
+}

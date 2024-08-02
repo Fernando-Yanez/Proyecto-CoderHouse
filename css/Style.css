@@ -92,9 +92,15 @@ header {
     margin: 30px 0 10px 0;
     display: contents; }
 
-@media only screen and (max-width) {
-  .grid-actividades__Transformaciones, .grid-actividades__Encantamientos, .grid-actividades__Pociones, .grid-actividades__Defensa-artes-oscuras, .grid-actividades__Astronomia, .grid-actividades__Herbologia, .grid-actividades__Historia-magia, .grid-actividades__Cuidado-Cmagicas, .grid-actividades__Adivinacion, .grid-actividades__Aritmancia, .grid-actividades__Estudios-muggle, .grid-actividades__Runas-antiguas {
-    color: black; } }
+.grid-galeria__Gryf, .grid-galeria__Huff, .grid-galeria__Revc, .grid-galeria__Slyt {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 0.5fr repeat(4, 1fr) 0.5fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  margin: 0 0 25px 0;
+  opacity: 0.7; }
 
 /*!----INDEX----*/
 .hero {
@@ -287,7 +293,7 @@ header div nav {
 
 /*!Page Actividades*/
 .carrusel img {
-  width: 1700px;
+  width: 1600px;
   height: 800px; }
 
 .grid-actividades {
@@ -342,7 +348,267 @@ header div nav {
 .grid-actividades__Runas-antiguas {
   grid-area: runasA; }
 
-/*Page Materiales*/
+/*!Page GALERIA*/
+main {
+  background-image: url(../img/fotos-galeria/hogwarts.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.grid-galeria__Gryf {
+  grid-template-areas: ". imgPrin imgPrim imgSec imgTer . " ". imgPrin imgCuar imgQuin imgSect ."; }
+  .grid-galeria__Gryf .grid-galeria__imgPrin {
+    grid-area: imgPrin;
+    grid-row: 1/end; }
+    .grid-galeria__Gryf .grid-galeria__imgPrin img {
+      width: 100%;
+      height: 610px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Gryf .grid-galeria__imgPrim {
+    grid-area: imgPrim; }
+    .grid-galeria__Gryf .grid-galeria__imgPrim img {
+      width: 100%;
+      height: 300px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Gryf .grid-galeria__imgSec {
+    grid-area: imgSec; }
+    .grid-galeria__Gryf .grid-galeria__imgSec img {
+      width: 100%;
+      height: 300px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Gryf .grid-galeria__imgTer {
+    grid-area: imgTer; }
+    .grid-galeria__Gryf .grid-galeria__imgTer img {
+      width: 100%;
+      height: 300px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Gryf .grid-galeria__imgCuar {
+    grid-area: imgCuar; }
+    .grid-galeria__Gryf .grid-galeria__imgCuar img {
+      width: 100%;
+      height: 300px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Gryf .grid-galeria__imgQuin {
+    grid-area: imgQuin; }
+    .grid-galeria__Gryf .grid-galeria__imgQuin img {
+      width: 100%;
+      height: 300px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Gryf .grid-galeria__imgSect {
+    grid-area: imgSect; }
+    .grid-galeria__Gryf .grid-galeria__imgSect img {
+      width: 100%;
+      height: 300px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Gryf div img:hover {
+    opacity: 1;
+    scale: 1.1; }
+
+.grid-galeria__Huff {
+  grid-template-areas: ".  imgPrim imgSec imgTer imgPrin . " ".  imgCuar imgQuin imgSect imgPrin ."; }
+  .grid-galeria__Huff .grid-galeria__imgPrin {
+    grid-area: imgPrin;
+    grid-row: 1/3; }
+    .grid-galeria__Huff .grid-galeria__imgPrin img {
+      width: 100%;
+      height: 610px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Huff .grid-galeria__imgPrim {
+    grid-area: imgPrim; }
+    .grid-galeria__Huff .grid-galeria__imgPrim img {
+      width: 100%;
+      height: 300px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Huff .grid-galeria__imgSec {
+    grid-area: imgSec; }
+    .grid-galeria__Huff .grid-galeria__imgSec img {
+      width: 100%;
+      height: 300px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Huff .grid-galeria__imgTer {
+    grid-area: imgTer; }
+    .grid-galeria__Huff .grid-galeria__imgTer img {
+      width: 100%;
+      height: 300px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Huff .grid-galeria__imgCuar {
+    grid-area: imgCuar; }
+    .grid-galeria__Huff .grid-galeria__imgCuar img {
+      width: 100%;
+      height: 300px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Huff .grid-galeria__imgQuin {
+    grid-area: imgQuin; }
+    .grid-galeria__Huff .grid-galeria__imgQuin img {
+      width: 100%;
+      height: 300px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Huff .grid-galeria__imgSect {
+    grid-area: imgSect; }
+    .grid-galeria__Huff .grid-galeria__imgSect img {
+      width: 100%;
+      height: 300px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Huff div img:hover {
+    opacity: 1;
+    scale: 1.1; }
+
+.grid-galeria__Revc {
+  grid-template-areas: ". imgPrin imgPrim imgSec imgTer . " ". imgPrin imgCuar imgQuin imgSect ."; }
+  .grid-galeria__Revc .grid-galeria__imgPrin {
+    grid-area: imgPrin;
+    grid-row: 1/end; }
+    .grid-galeria__Revc .grid-galeria__imgPrin img {
+      width: 100%;
+      height: 610px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Revc .grid-galeria__imgPrim {
+    grid-area: imgPrim; }
+    .grid-galeria__Revc .grid-galeria__imgPrim img {
+      width: 100%;
+      height: 300px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Revc .grid-galeria__imgSec {
+    grid-area: imgSec; }
+    .grid-galeria__Revc .grid-galeria__imgSec img {
+      width: 100%;
+      height: 300px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Revc .grid-galeria__imgTer {
+    grid-area: imgTer; }
+    .grid-galeria__Revc .grid-galeria__imgTer img {
+      width: 100%;
+      height: 300px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Revc .grid-galeria__imgCuar {
+    grid-area: imgCuar; }
+    .grid-galeria__Revc .grid-galeria__imgCuar img {
+      width: 100%;
+      height: 300px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Revc .grid-galeria__imgQuin {
+    grid-area: imgQuin; }
+    .grid-galeria__Revc .grid-galeria__imgQuin img {
+      width: 100%;
+      height: 300px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Revc .grid-galeria__imgSect {
+    grid-area: imgSect; }
+    .grid-galeria__Revc .grid-galeria__imgSect img {
+      width: 100%;
+      height: 300px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Revc div img:hover {
+    opacity: 1;
+    scale: 1.1; }
+
+.grid-galeria__Slyt {
+  grid-template-areas: ".  imgPrim imgSec imgTer imgPrin . " ".  imgCuar imgQuin imgSect imgPrin .";
+  margin: 0; }
+  .grid-galeria__Slyt .grid-galeria__imgPrin {
+    grid-area: imgPrin;
+    grid-row: 1/3; }
+    .grid-galeria__Slyt .grid-galeria__imgPrin img {
+      width: 100%;
+      height: 610px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Slyt .grid-galeria__imgPrim {
+    grid-area: imgPrim; }
+    .grid-galeria__Slyt .grid-galeria__imgPrim img {
+      width: 100%;
+      height: 300px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Slyt .grid-galeria__imgSec {
+    grid-area: imgSec; }
+    .grid-galeria__Slyt .grid-galeria__imgSec img {
+      width: 100%;
+      height: 300px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Slyt .grid-galeria__imgTer {
+    grid-area: imgTer; }
+    .grid-galeria__Slyt .grid-galeria__imgTer img {
+      width: 100%;
+      height: 300px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Slyt .grid-galeria__imgCuar {
+    grid-area: imgCuar; }
+    .grid-galeria__Slyt .grid-galeria__imgCuar img {
+      width: 100%;
+      height: 300px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Slyt .grid-galeria__imgQuin {
+    grid-area: imgQuin; }
+    .grid-galeria__Slyt .grid-galeria__imgQuin img {
+      width: 100%;
+      height: 300px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Slyt .grid-galeria__imgSect {
+    grid-area: imgSect; }
+    .grid-galeria__Slyt .grid-galeria__imgSect img {
+      width: 100%;
+      height: 300px;
+      transition: 1s;
+      display: flex;
+      margin: 0 auto; }
+  .grid-galeria__Slyt div img:hover {
+    opacity: 1;
+    scale: 1.1; }
+
 /*!page MISION VISION */
 .grid-misiVisi {
   width: 100%;
@@ -618,7 +884,6 @@ header div nav {
   .grid-actividades__Transformaciones p, .grid-actividades__Encantamientos p, .grid-actividades__Pociones p, .grid-actividades__Defensa-artes-oscuras p, .grid-actividades__Astronomia p, .grid-actividades__Herbologia p, .grid-actividades__Historia-magia p, .grid-actividades__Cuidado-Cmagicas p, .grid-actividades__Adivinacion p, .grid-actividades__Aritmancia p, .grid-actividades__Estudios-muggle p, .grid-actividades__Runas-antiguas p {
     font-size: 15px; } }
 
-/*!En proceso*/
 /*!@MEDIA MISION & VISION*/
 @media only screen and (max-width: 1200px) {
   .grid-misiVisi {
@@ -646,3 +911,88 @@ header div nav {
     margin: 0; }
   .grid-misiVisi__Img-vision {
     margin: 0; } }
+
+/*! MEDIA QUERIS GALERIA*/
+@media only screen and (max-width: 1100px) {
+  .grid-galeria__Gryf {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "imgPrin imgPrim imgSec imgTer" "imgPrin imgCuar imgQuin imgSect"; }
+  .grid-galeria__Huff {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "imgPrim imgSec imgTer imgPrin " "imgCuar imgQuin imgSect imgPrin "; }
+  .grid-galeria__Revc {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "imgPrin imgPrim imgSec imgTer" "imgPrin imgCuar imgQuin imgSect"; }
+  .grid-galeria__Slyt {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "imgPrim imgSec imgTer imgPrin " "imgCuar imgQuin imgSect imgPrin "; } }
+
+@media only screen and (max-width: 830px) {
+  .grid-galeria__Gryf {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "imgPrin imgPrim imgSec " "imgPrin imgTer imgCuar " "imgPrin imgQuin imgSect"; }
+    .grid-galeria__Gryf .grid-galeria__imgPrin {
+      grid-row: 1 / 5; }
+      .grid-galeria__Gryf .grid-galeria__imgPrin img {
+        height: 920px; }
+  .grid-galeria__Huff {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "imgPrim imgSec  imgPrin " "imgTer imgCuar  imgPrin " "imgQuin imgSect imgPrin"; }
+    .grid-galeria__Huff .grid-galeria__imgPrin {
+      grid-row: -4 / -1; }
+      .grid-galeria__Huff .grid-galeria__imgPrin img {
+        height: 920px; }
+  .grid-galeria__Revc {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "imgPrin imgPrim imgSec " "imgPrin imgTer imgCuar " "imgPrin imgQuin imgSect"; }
+    .grid-galeria__Revc .grid-galeria__imgPrin {
+      grid-row: 1 / 5; }
+      .grid-galeria__Revc .grid-galeria__imgPrin img {
+        height: 920px; }
+  .grid-galeria__Slyt {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "imgPrim imgSec  imgPrin " "imgTer imgCuar  imgPrin " "imgQuin imgSect imgPrin"; }
+    .grid-galeria__Slyt .grid-galeria__imgPrin {
+      grid-row: -4 / -1; }
+      .grid-galeria__Slyt .grid-galeria__imgPrin img {
+        height: 920px; } }
+
+@media only screen and (max-width: 570px) {
+  .grid-galeria__imgPrin {
+    display: none; }
+  .grid-galeria__Gryf {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "imgPrim imgSec " "imgTer imgCuar " "imgQuin imgSect"; }
+  .grid-galeria__Huff {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "imgPrim imgSec " "imgTer imgCuar " "imgQuin imgSect"; }
+  .grid-galeria__Revc {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "imgPrim imgSec " "imgTer imgCuar " "imgQuin imgSect"; }
+  .grid-galeria__Slyt {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "imgPrim imgSec " "imgTer imgCuar " "imgQuin imgSect"; } }
+
+@media only screen and (max-width: 400px) {
+  .grid-galeria__imgPrin {
+    display: none; }
+  .grid-galeria__Gryf {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "imgPrim " "imgSec " "imgTer " "imgCuar " "imgQuin " "imgSect"; }
+  .grid-galeria__Huff {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "imgPrim " "imgSec " "imgTer " "imgCuar " "imgQuin " "imgSect"; }
+  .grid-galeria__Revc {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "imgPrim " "imgSec " "imgTer " "imgCuar " "imgQuin " "imgSect"; }
+  .grid-galeria__Slyt {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "imgPrim " "imgSec " "imgTer " "imgCuar " "imgQuin " "imgSect"; } }
