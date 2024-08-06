@@ -111,31 +111,7 @@ $color-letras: white;
             grid-row: 1/end;
             @include rango(1);
         }
-        .grid-galeria__imgPrim{
-            grid-area: imgPrim;
-            @include rango(2);
-        }
-        .grid-galeria__imgSec{
-            grid-area: imgSec;
-            @include rango(2);
-        }
-        .grid-galeria__imgTer{
-            grid-area: imgTer;
-            @include rango(2);
-        }
 
-        .grid-galeria__imgCuar{
-            grid-area: imgCuar;
-            @include rango(2);
-        }
-        .grid-galeria__imgQuin{
-            grid-area: imgQuin;
-            @include rango(2);
-        }
-        .grid-galeria__imgSect{
-            grid-area: imgSect;
-            @include rango(2);
-        }
         
     }@else {
         grid-template-areas:
@@ -148,32 +124,35 @@ $color-letras: white;
             grid-row: 1/3;
             @include rango(1);
         }
-        .grid-galeria__imgPrim{
-            grid-area: imgPrim;
-            @include rango(2);
-        }
-        .grid-galeria__imgSec{
-            grid-area: imgSec;
-            @include rango(2);
-        }
-        .grid-galeria__imgTer{
-            grid-area: imgTer;
-            @include rango(2);
-        }
 
-        .grid-galeria__imgCuar{
-            grid-area: imgCuar;
-            @include rango(2);
-        }
-        .grid-galeria__imgQuin{
-            grid-area: imgQuin;
-            @include rango(2);
-        }
-        .grid-galeria__imgSect{
-            grid-area: imgSect;
-            @include rango(2);
-        }
     }
     
 }
-    
+
+%grid-galeria-orden{
+    .grid-galeria__imgPrim{
+        grid-area: imgPrim;
+        @include rango(2);
+    }
+    .grid-galeria__imgSec{
+        grid-area: imgSec;
+        @include rango(2);
+    }
+    .grid-galeria__imgTer{
+        grid-area: imgTer;
+        @include rango(2);
+    }
+
+    .grid-galeria__imgCuar{
+        grid-area: imgCuar;
+        @include rango(2);
+    }
+    .grid-galeria__imgQuin{
+        grid-area: imgQuin;
+        @include rango(2);
+    }
+    .grid-galeria__imgSect{
+        grid-area: imgSect;
+        @include rango(2);
+    }
+}

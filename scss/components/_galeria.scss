@@ -11,6 +11,7 @@
 
 .grid-galeria__Gryf{
     @extend %grid-galeria;
+    @extend %grid-galeria-orden;
     @include orden (1);
 
     div{
@@ -23,6 +24,7 @@
 
 .grid-galeria__Huff{
     @extend %grid-galeria;
+    @extend %grid-galeria-orden;
     @include orden (2);
     div{
         img:hover{
@@ -34,6 +36,7 @@
 
 .grid-galeria__Revc{
     @extend %grid-galeria;
+    @extend %grid-galeria-orden;
     @include orden (1);
     div{
         img:hover{
@@ -45,6 +48,7 @@
 
 .grid-galeria__Slyt{
     @extend %grid-galeria;
+    @extend %grid-galeria-orden;
     @include orden (2);
     div{
         img:hover{
