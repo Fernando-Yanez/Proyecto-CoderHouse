@@ -1,6 +1,5 @@
-
 /*!----INDEX----*/
-.hero{
+.hero {
     width: 100%;
     height: calc(90vh - 104px);
     background-image: url(../img/fotos-Index/hogwarts.png);
@@ -10,25 +9,27 @@
     background-attachment: fixed;
     color: white;
 
-    h2{font-family: harry;
+    h2 {
+        font-family: harry;
         font-size: 75px;
         text-align: center;
-        padding: 50px;}
-    
+        padding: 50px;
+    }
+
 }
 
-.grid-noticias{
+.grid-noticias {
     width: 100%;
     height: auto;
     display: grid;
     grid-template-columns: 0.2fr 1fr 1.5fr 0.2fr;
     grid-template-rows: repeat(3, 200px);
-    grid-template-areas: 
-    ". not1 not2 ."
-    ". not1 not3 ."
-    ". not1 not4 .";
+    grid-template-areas:
+        ". not1 not2 ."
+        ". not1 not3 ."
+        ". not1 not4 .";
     grid-gap: 20px;
-    
+
     background-image: url(../img/fotos-Index/fondo-bosque.jpg);
     background-position: center;
     background-size: cover;
@@ -40,70 +41,76 @@
     color: white;
 }
 
-.grid-noticias__not1{
+.grid-noticias__not1 {
     grid-area: not1;
     grid-row: 1/end;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 5px solid rgba(0, 128, 0, 0.5) ;
+    border: 5px solid rgba(0, 128, 0, 0.5);
     border-radius: 25px;
 
-    img{
-    width: 75%;
-    height: 70%;
-    margin: 0 auto;
-    border-radius: 25px;
-    
+    img {
+        width: 75%;
+        height: 70%;
+        margin: 0 auto;
+        border-radius: 25px;
+
     }
 
-    
+
 }
 
 
-.grid-noticias__not2{
+.grid-noticias__not2 {
     grid-area: not2;
     display: flex;
     padding: 25px;
     border: 5px solid rgba(255, 0, 0, 0.5);
     border-radius: 25px;
 
-    img{@extend %img-noticias;}
+    img {
+        @extend %img-noticias;
+    }
 }
 
-.grid-noticias__not3{
+.grid-noticias__not3 {
     grid-area: not3;
     display: flex;
     padding: 25px;
     border: 5px solid rgba(229, 245, 7, 0.5);
     border-radius: 25px;
 
-    img{@extend %img-noticias;}
+    img {
+        @extend %img-noticias;
+    }
 }
 
-.grid-noticias__not4{
+.grid-noticias__not4 {
     grid-area: not4;
     display: flex;
     padding: 25px;
     border: 5px solid rgba(51, 110, 219, 0.5);
     border-radius: 25px;
 
-    img{@extend %img-noticias;}
+    img {
+        @extend %img-noticias;
+    }
 }
 
 
-.grid-informacion{
+.grid-informacion {
     width: 100%;
     height: auto;
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
     grid-template-rows: repeat(4, 300px);
-    grid-template-areas: 
-    ". fundacion img-gry ."
-    ". img-huf ubicacion ."
-    ". personal img-rev ."
-    ". img-sly instalaciones .";
+    grid-template-areas:
+        ". fundacion img-gry ."
+        ". img-huf ubicacion ."
+        ". personal img-rev ."
+        ". img-sly instalaciones .";
     gap: 10px;
     background-image: url(../img/fotos-Index/fondo-salaMenesteres.png);
     background-position: center;
@@ -111,50 +118,58 @@
     background-attachment: fixed;
 
 
-    div{
-        h2{    font-family: harry;
-            font-size: 40px;
-            text-align: center;
-            color: white;}
 
-        img{   width: 300px;
-            height: 300px;}
+    div {
+        h3 {
+            font-family: harry;
+            font-size: 50px;
+            text-align: center;
+            color: white;
+            -webkit-text-stroke: 0.7px rgb(0, 0, 0)
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+        }
     }
 
 }
 
 
-.grid-informacion__fundacion{
+.grid-informacion__fundacion {
     grid-area: fundacion;
     margin: 20px 0 0 0;
 }
-.grid-informacion__img-gry{
+
+.grid-informacion__img-gry {
     grid-area: img-gry;
     margin: 0 auto;
 }
 
-.grid-informacion__img-huf{
+.grid-informacion__img-huf {
     grid-area: img-huf;
     margin: 0 auto;
 }
 
-.grid-informacion__ubicacion{
+.grid-informacion__ubicacion {
     grid-area: ubicacion;
 }
 
-.grid-informacion__personal{
+.grid-informacion__personal {
     grid-area: personal;
 }
-.grid-informacion__img-rev{
+
+.grid-informacion__img-rev {
     grid-area: img-rev;
     margin: 0 auto;
 }
 
-.grid-informacion__img-sly{
+.grid-informacion__img-sly {
     grid-area: img-sly;
     margin: 0 auto;
 }
 
-.grid-informacion__instalaciones{
+.grid-informacion__instalaciones {
     grid-area: instalaciones;
 }

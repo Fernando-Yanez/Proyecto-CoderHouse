@@ -47,7 +47,8 @@ header {
       color: white !important;
       font-family: comic;
       font-size: 25px;
-      transition: 0.5s; }
+      transition: 0.5s;
+      margin: 0 15px 0 0; }
       .grid-header__nav nav div ul li a:hover {
         font-family: harry;
         font-size: 30px; }
@@ -238,11 +239,12 @@ header {
   background-position: center;
   background-size: cover;
   background-attachment: fixed; }
-  .grid-informacion div h2 {
+  .grid-informacion div h3 {
     font-family: harry;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
-    color: white; }
+    color: white;
+    -webkit-text-stroke: 0.7px black; }
   .grid-informacion div img {
     width: 300px;
     height: 300px; }
@@ -289,14 +291,15 @@ header div nav {
   background-position: center;
   background-attachment: fixed;
   background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.445); }
+  background-color: rgba(46, 46, 46, 0.445); }
 
 .hero-casas h2 {
   color: aliceblue;
   font-family: bonaNava;
   font-size: 35px;
   text-align: center;
-  padding: 50px; }
+  padding: 50px;
+  text-shadow: 5px -4px 5px rgba(20, 20, 20, 0.69); }
 
 .grid-casas {
   width: 100%;
@@ -313,7 +316,8 @@ header div nav {
   .grid-casas div p {
     font-family: bonaNava;
     font-size: 30px;
-    color: aliceblue; }
+    color: aliceblue;
+    text-shadow: 5px -4px 5px black; }
 
 .grid-casas__gry {
   grid-area: gry; }
